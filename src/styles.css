@@ -38,28 +38,44 @@ i {
     z-index: 1;
     box-shadow: 0px 5px 0px rgba(81, 71, 139, 0.171);
 }
-
 #info {
-    padding: 35px;
+    padding: 2rem; /*Padding relativo para que se ajuste al tamaño del contenedor*/
 }
 
 #info-action {
     display: flex;
+    flex-wrap: wrap; /* Activamos el wrap para que no sobrepasen los botones*/
 }
 
-#info-details {
+/* 
+    Esto genera el overflow
+    #info-details {
     width: 300px;
     flex-shrink: 0;
-}
+} */
 
-#info-details > li {
+
+/* Cambie li por ul y modifique el selector*/
+#info-details ul {
     list-style: none;
 }
 
 #info-details li a {
     color: black;
-    display: flex;
+    /* 
+    No es necesario el uso del flex
+    display: flex; */
     text-decoration: none;
+}
+
+#info-details li a h5{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    /* 
+    No son necesarios para alinear
+    align-self: center;
+    vertical-align: baseline; */
 }
 
 #info-details li a img {
