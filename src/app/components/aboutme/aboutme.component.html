@@ -1,41 +1,38 @@
-<div class="mx-auto thing-container-md mb-5">
-  <div class="title mb-3">
-    <h3>Acerca de...</h3>
-  </div>
-  <div class="row">
-    <div class="col-lg-2">
-      <img src="https://scontent.frgl4-1.fna.fbcdn.net/v/t39.30808-6/275130591_1971346866371333_8235396127800582142_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=5cd70e&_nc_eui2=AeHSO94g45Y8OQZ7G_1qIZRIA2zjmuh-YkoDbOOa6H5iSs9DcpvqahMSc5fqOZewXIRZi16Sj9zsjsPsWguUgCLJ&_nc_ohc=cg_5KnxAHEEAX9350me&_nc_ht=scontent.frgl4-1.fna&oh=00_AT-ovtvt041elomKXe3TtOvy1PQs1J7HkI9IAUt8wsgkmA&oe=622EC034" alt="" id="about-img">
-    </div>
-    <div class="col-lg-10 shadowbox" style="padding: 20px;">
-      <div class="mat-card">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="title mb-3">
-              <h3>Introducción</h3>
-              <i class="fa-solid fa-edit"></i>
+<section class="about section mb-5" id="about">
+  <div class="container">
+    <h2 class="title mb-3">
+      Acerca de...
+      <!-- Icono para editar -->
+    </h2>
+    <div class="row">
+      <div class="about-img padd-15">
+        <!-- Img -->
+        <img class="about-img" src="http://c.files.bbci.co.uk/48DD/production/_107435681_perro1.jpg" alt="">
+      </div>
+      <div class="about-content padd-15">
+        <div class="rounded">
+          <div class="row">
+            <div class="about-text">
+              <h4 class="title mb-3">Introducción</h4>
+              {{myPortfolio.about}}
             </div>
-            <p>{{myPortfolio.about}}</p>
-          </div>
-          <div class="col-lg-4">
-            <div class="title mb-3">
-              <h3>Otra Información</h3>
-              <i class="fa-solid fa-edit"></i>
+            <div class="other-information">
+              <h4 class="title mb-3">Otra información</h4>
+              <ul>
+                <li class="mb-2"><strong>Lugar de nacimiento:</strong> Córdoba Capital</li>
+                <li class="mb-2"><strong>Lugar de nacimiento:</strong> Córdoba Capital</li>
+                <li class="mb-2"><strong>Lugar de nacimiento:</strong> Córdoba Capital</li>
+                <li class="mb-2"><strong>Lugar de nacimiento:</strong> Córdoba Capital</li>
+              </ul>
             </div>
-            <p><strong>Lugar de nacimiento</strong>: Córdoba Capital</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- About 
- <div class="card mat-card mx-auto" id="aboutme">
-    <div id="info">
-        <div class="title mb-1">
-            <h3>Acerca de...</h3>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#editaboutme"><i class="fa-solid fa-pen-to-square"></i></a>
-
+<!-- 
             <div class="modal fade" id="editaboutme" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
@@ -57,10 +54,4 @@
                   </div>
                 </div>
               </div>
-
-
-        </div>
-        <p>{{myPortfolio.about}}</p>
-    </div>
-</div>
-<!-- END about-->
+-->

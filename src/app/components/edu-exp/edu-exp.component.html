@@ -1,104 +1,115 @@
-<!-- Educación y Experiencia -->
-<div class="mx-auto thing-container-md mb-5" id="education-experience">
-    <div id="info">
-        <div class="row align-item-center">
-            <!-- Columna -->
-            <div class="col-lg-6">
-                <div class="title mb-1">
-                    <h3>Educación</h3>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <!-- Elemento EDU -->
-                <li *ngFor="let education of educationList">
-                    <div class="border-left border-primary pt-2 pl-4 ml2">
-                        <div class="position-relative ex-me mb-4">
-                            <h5 class="text-primary">{{education.degree}}<a href="#" data-bs-toggle="modal" data-bs-target="#editeducation"><i class="fa-solid fa-pen-to-square"></i></a><i class="fa-regular fa-square-minus"></i></h5>
-                            <p class="text-muted mb-1"><strong>{{education.school}}</strong> <small>{{education.period}}</small></p>
-                            <p class="text-muted">{{education.otherInformation}}</p>
-                        </div>
-                    </div>
-                </li>
-
-                <div class="modal fade" id="editeducation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="staticBackdropLabel">Modificar educación</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <form>
-                            <div class="mb-3">
-                              <label for="nameImput" class="form-label">Título</label>
-                              <input class="form-control" type="text" placeholder="Escriba título conseguido" aria-label="Escriba título conseguido">
-                            </div>
-                            <div class="mb-3">
-                                <label for="nameImput" class="form-label">Escuela</label>
-                                <input class="form-control" type="text" placeholder="Escriba la escuela donde lo consiguió" aria-label="Escriba la escuela donde lo consiguió">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">¿Otra información que quiera agregar?</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <br>
-                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                <!-- END Elemento EDU -->
+<section class="section mb-5" id="experience">
+  <div class="container">
+    <div class="row">
+      <!-- Education -->
+      <div class="education">
+        <h3 class="title mb-3">Educación</h3>
+        <div class="row">
+          <div class="timeline-box">
+            <div class="timeline">
+              <!-- timeline items -->
+              <li class="timeline-item" *ngFor="let education of educationList">
+                <i class="timeline-icon fa-solid fa-graduation-cap"></i>
+                <h5 class="timeline-date">
+                  <i class="fa-regular fa-calendar"></i>
+                  {{education.period}}
+                </h5>
+                <h5 class="timeline-title">{{education.degree}}</h5>
+                <p class="timeline-text">{{education.otherInformation}}</p>
+              </li>
             </div>
-            
-            <!-- Columna -->
-            <div class="col-lg-6">
-                <div class="title mb-1">
-                    <h3>Experiencia</h3>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-            
-                <li *ngFor="let experience of experienceList">
-                    <div class="border-left border-primary pt-2 pl-4 ml2">
-                        <div class="position-relative ex-me mb-4">
-                            <h5 class="text-primary">{{experience.ocupation}}<a href="#" data-bs-toggle="modal" data-bs-target="#editexperience"><i class="fa-solid fa-pen-to-square"></i></a><i class="fa-regular fa-square-minus"></i></h5>
-                            <p class="text-muted mb-1"><strong>{{experience.place}}</strong> <small>{{experience.period}}</small></p>
-                            <p class="text-muted">{{experience.description}}</p>
-                        </div>
-                    </div>
-                </li>
-                <div class="modal fade" id="editexperience" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="staticBackdropLabel">Modificar educación</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <form>
-                            <div class="mb-3">
-                              <label for="nameImput" class="form-label">Cargo</label>
-                              <input class="form-control" type="text" placeholder="Escriba cargo conseguido" aria-label="Escriba cargo conseguido">
-                            </div>
-                            <div class="mb-3">
-                                <label for="nameImput" class="form-label">Lugar de trabajo</label>
-                                <input class="form-control" type="text" placeholder="Escriba la empresa donde trabajó" aria-label="Escriba la empresa donde trabajó">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Describa las actividades del cargo que ocupaba</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <br>
-                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <!-- Experience -->
+      <div class="experience">
+        <h3 class="title mb-3">Experiencia</h3>
+        <div class="row">
+          <div class="timeline-box">
+            <!-- timeline items -->
+            <div class="timeline">
+              <li class="timeline-item" *ngFor="let experience of experienceList">
+                <!-- Iconito de graduación -->
+                <i class="timeline-icon fa-solid fa-briefcase"></i>
+                <h5 class="timeline-date">
+                  <i class="fa-regular fa-calendar"></i>
+                  {{experience.period}}
+                </h5>
+                <h5 class="timeline-title">{{experience.ocupation}}</h5>
+                <p class="timeline-text">{{experience.description}}</p>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
+
+<div class="modal fade" id="editeducation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modificar educación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nameImput" class="form-label">Título</label>
+            <input class="form-control" type="text" placeholder="Escriba título conseguido"
+              aria-label="Escriba título conseguido">
+          </div>
+          <div class="mb-3">
+            <label for="nameImput" class="form-label">Escuela</label>
+            <input class="form-control" type="text" placeholder="Escriba la escuela donde lo consiguió"
+              aria-label="Escriba la escuela donde lo consiguió">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">¿Otra información que quiera agregar?</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <br>
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="editexperience" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modificar educación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nameImput" class="form-label">Cargo</label>
+            <input class="form-control" type="text" placeholder="Escriba cargo conseguido"
+              aria-label="Escriba cargo conseguido">
+          </div>
+          <div class="mb-3">
+            <label for="nameImput" class="form-label">Lugar de trabajo</label>
+            <input class="form-control" type="text" placeholder="Escriba la empresa donde trabajó"
+              aria-label="Escriba la empresa donde trabajó">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Describa las actividades del cargo que
+              ocupaba</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <br>
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- END Educación y Experiencia -->
