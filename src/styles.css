@@ -1,4 +1,7 @@
-/* You can add global styles to this file, and also import other style files 
+body {
+    background-color: #f9f9f9;
+}
+
 li {
     list-style: none;
 }
@@ -7,93 +10,67 @@ i {
     padding: 5px;
 }
 
+.thing-container {
+    margin: 10px 10px;
+    width: 90%;
+}
+
+.thing-container-md {
+    margin: 10px 10px;
+    width: 82%;
+}
+
+.shadowing {
+    text-shadow: rgb(49, 49, 49) 1px 0 10px;
+}
+
+.shadowbox {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: rgba(49, 49, 49, 0.13) 1px 0 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
 #nav-title {
     padding: 10px;
     font-weight: 600;
 }
 
-.mat-card {
-    border-radius: 10px 10px 10px 10px;
-    margin: 10px 10px;
-    padding: 0px;
-    width: 85%;
-}
-
-#info-data {
-    display: flex;
-    justify-content: space-between;
-}
-
-#card-about > img {
-    width: 100%;
-    display: flex;
-}
-
-#img-about {
+#profile-pfp {
     border-radius: 50%;
     width: 152px;
     height: 152px;
-    margin-left: -10px;
-    margin-top: -110px;
+    margin-top: 3rem;
     z-index: 1;
     box-shadow: 0px 5px 0px rgba(81, 71, 139, 0.171);
 }
-#info {
-    padding: 2rem; /*Padding relativo para que se ajuste al tamaño del contenedor 
+
+.hero-container::before{
+    position: absolute;
 }
 
-#info-action {
-    display: flex;
-    flex-wrap: wrap; /* Activamos el wrap para que no sobrepasen los botones 
+#profile-container {
+    margin-bottom: 3rem;
+    background-image: url(https://a-static.besthdwallpaper.com/fondo-de-pantalla-de-squid-game-black-4k-minimalista-2021-ronda-6-papel-pintado-1680x1050-81743_5.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 75vh;
+    background-position: center center;
+    background-size: cover;
 }
 
-/* 
-    Esto genera el overflow
-    #info-details {
-    width: 300px;
-    flex-shrink: 0;
-} */
-
-
-/* Cambie li por ul y modifique el selector 
-#info-details ul {
-    list-style: none;
+#profile-info {
+    position: relative;
+    z-index: 2;
 }
 
-#info-details li a {
-    color: black;
-    /* 
-    No es necesario el uso del flex
-    display: flex; 
-    text-decoration: none;
-}
-
-#info-details li a h5{
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 500;
-    /* 
-    No son necesarios para alinear
-    align-self: center;
-    vertical-align: baseline; 
-}
-
-#info-details li a img {
-    width: 40px;
-    height: 40px;
-    margin-right: 8px;
-}
-
-#info-details li a h5 {
-    font-size: 1rem;
-    font-weight: 500;
-    align-self: center;
-    vertical-align: baseline;
-}
-
-.title { 
-    display: flex;
-    justify-content: space-between;
+#about-img {
+    border-radius: 5px 5px 5px 5px;
+    height: 100%;
+    width: 100%;
 }
 
 .progress {
@@ -103,4 +80,3 @@ i {
 .progress .progress-bar {
     border-radius: 10px;
 }
-*/
