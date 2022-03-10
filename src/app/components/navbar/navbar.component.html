@@ -1,40 +1,51 @@
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid justify-content-md-between">
-        <a class="navbar-brand text-primary" id="nav-title" href="#">Argentina Programa</a>
-
-            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalLoginForm">Iniciar sesión</button>
-
-             <!-- Vertically centered modal -->
-             <div class="modal fade" id="modalLoginForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Iniciar sesión</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<!--Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid justify-content-md-between">
+      <a class="navbar-brand text-primary" id="nav-title" href="#" style="font-weight: 700;">
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1645588080/APLogo-20-20.png" alt="" width="30" height="24">
+        Argentina Programa
+      </a>
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="" width="30" height="24" id="navbar_LinkedIn">
+      <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png" alt="" width="30" height="24" id="navbar_Instagram">
+      
+      <button type="button" class="btn btn-success d-table mx-auto" data-bs-toggle="modal" data-bs-target="#ModalForm">
+        Bootstrap Modal Form
+      </button>
+      
+      <!-- Modal Form -->
+      <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <!-- Login Form -->
+              <form action="">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal Login Form</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                      <label for="Username">Username<span class="text-danger">*</span></label>
+                      <input type="text" name="username" class="form-control" id="Username" placeholder="Enter Username">
                   </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Dirección de mail</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">No vamos a compartir esta información con nadie</div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                      </div>
-                      <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
-                      </div>
-                      <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="submit" class="btn btn-primary ms-2">Iniciar sesión</button>
-                    </form>
+      
+                  <div class="mb-3">
+                      <label for="Password">Password<span class="text-danger">*</span></label>
+                      <input type="password" name="password" class="form-control" id="Password" placeholder="Enter Password">
+                  </div>
+                  <div class="mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                      <label class="form-check-label" for="remember">Remember Me</label>
+                      <a href="#" class="float-end">Forgot Password</a>
                   </div>
                 </div>
-              </div>
-            </div>
-    </div>
-  </nav>
-<!-- END Navbar -->
+                <div class="modal-footer pt-4">                  
+                  <button type="button" class="btn btn-success mx-auto w-100">Login</button>
+                </div>
+                <p class="text-center">Not yet account, <a href="#">Signup</a></p> 
+            </form>
+          </div>
+        </div>
+      </div>
+   </div>
+</nav>
+<!-- END Navbar-->

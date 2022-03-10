@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files 
 li {
     list-style: none;
 }
@@ -39,12 +39,12 @@ i {
     box-shadow: 0px 5px 0px rgba(81, 71, 139, 0.171);
 }
 #info {
-    padding: 2rem; /*Padding relativo para que se ajuste al tamaño del contenedor*/
+    padding: 2rem; /*Padding relativo para que se ajuste al tamaño del contenedor 
 }
 
 #info-action {
     display: flex;
-    flex-wrap: wrap; /* Activamos el wrap para que no sobrepasen los botones*/
+    flex-wrap: wrap; /* Activamos el wrap para que no sobrepasen los botones 
 }
 
 /* 
@@ -55,7 +55,7 @@ i {
 } */
 
 
-/* Cambie li por ul y modifique el selector*/
+/* Cambie li por ul y modifique el selector 
 #info-details ul {
     list-style: none;
 }
@@ -64,7 +64,7 @@ i {
     color: black;
     /* 
     No es necesario el uso del flex
-    display: flex; */
+    display: flex; 
     text-decoration: none;
 }
 
@@ -75,7 +75,7 @@ i {
     /* 
     No son necesarios para alinear
     align-self: center;
-    vertical-align: baseline; */
+    vertical-align: baseline; 
 }
 
 #info-details li a img {
@@ -103,3 +103,4 @@ i {
 .progress .progress-bar {
     border-radius: 10px;
 }
+*/
