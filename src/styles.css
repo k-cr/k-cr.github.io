@@ -1,146 +1,392 @@
-/* =====================  General  ========================== */
+:root{
+    --color-primary: #3a6cf4;
+    --color-secondary: #4e9eff;
+    --color-lightblue: #235bf6;
+/* =============== Basic =========== */
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 100px 200px;
+}
 
 body {
-    background-color: #f9f9f9;
+    min-height: 110vh;
 }
 
-li {
-    list-style: none;
-}
 
-i {
-    padding: 5px;
-}
-
-.shadowing {
-    text-shadow: rgb(49, 49, 49) 1px 0 10px;
-}
-
-.shadowbox {
-    border-radius: 5px 5px 5px 5px;
-    box-shadow: rgba(49, 49, 49, 0.13) 1px 0 10px;
-}
-
-.title {
+header {
+    z-index: 999;
+    position: fixed;
+    background: rgba(255,255,255,0.1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 150px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
+header .brand {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-/* =====================  Navbar  ========================== */
+header .navigation {
+    position: relative;
+}
 
-#nav-title {
-    padding: 10px;
+header .navigation a {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+header .navigation a:hover {
+    color: var(--color-primary);
+}
+
+header.sticky {
+    background: var(--color-primary);
+    padding: 15px 150px;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background: url(https://wallpaperaccess.com/full/569754.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main .content {
+    max-width: 800px;
+}
+
+.main .content h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.main .content h2 span {
+    font-size: 2.8rem;
     font-weight: 600;
 }
 
+.animated-text {
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
 
-/* =====================  Profile  ========================== */
-.profile {
+.animated-text h3 {
+    color: var(--color-primary);
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+
+.animated-text h3:nth-child(1) {
+    animation: text-move 5s infinite;
+}
+
+@keyframes text-move {
+    0% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -70px;
+    }
+    50% {
+        margin-top: -140px;
+    }
+    75%{
+        margin-top: -70px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+.btn {
+    color: #fff;
+    background: var(--color-secondary);
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    background: var(--color-lightblue);
+    color: #fff;
+}
+
+.media-icons {
+    margin-top: -10px;
+}
+
+.media-icons a {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.title {
+    width: 100%;
     display: flex;
     justify-content: center;
-    height: 100vh;
-    min-height: 100vh;
     align-items: center;
+    flex-direction: column;
 }
 
-#profile-pfp {
-    border-radius: 50%;
-    width: 152px;
-    height: 152px;
-    margin-top: 3rem;
-    z-index: 1;
-    box-shadow: 0px 5px 0px rgba(81, 71, 139, 0.171);
-}
-
-/* =====================  About  ========================== */
-
-.about-img {
-    flex: 0 0 25%;
-    max-width: 20%;
-}
-
-.about-content {
-    flex: 0 0 75%;
-    max-width: 80%;
-}
-
-.about-content .about-text,
-.about-content .other-information {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.rounded {
-    background-color: white;
-    padding: 25px;
-    border-radius: 30px;
-}
-
-/* =====================  Education / Experience ========================== */
-
-.education {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.experience {
-    flex: 0 0 50%;
-    max-width: 50%
-}
-
-.timeline-box {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.timeline {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 30px;
-    width: 100%;
+.section-title {
     position: relative;
+    color: var(--color-primary);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 60px;
 }
 
-.timeline .timeline-item {
-    position: relative;
-    padding-left: 2.5rem;
-    padding-bottom: 1.9rem;
-}
-
-.timeline .timeline-item:last-child {
-    padding-bottom: 0;
-}
-
-.timeline .timeline-item::before {
+.section-title:before {
     content: '';
-    width: 2px;
     position: absolute;
+    top: 56px;
+    left: 50%;
+    width: 140px;
+    height: 4px;
+    background-color: var(--color-primary);
+    transform: translateX(-50%);
+}
+
+.section-title:after {
+    content: ' ';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    transform: translateX(-50%);
+}
+
+.about .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about .content .col-left {
+    position: relative;
+    width: 45%;
+}
+
+.about .content .col-right {
+    position: relative;
+    width: 50%;
+}
+
+.about .content .col-left .img-card {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+}
+
+.about .content .col-left .img-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    left: 0.5rem;
-    background-color: rgba(77, 77, 201, 0.829);
-    top: 0;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.timeline .timeline-icon {
+.about .content .col-right .content-title {
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.about .content .col-right .paragraph-text {
+    font-size: 1em;
+}
+
+.skills {
+    background: #000016;
+}
+
+.skills .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.skills .content .col-left {
+    position: relative;
+    width: 46%;
+}
+
+.skills .content .col-right {
+    position: relative;
+    width: 46%;
+}
+
+.skills .content .col-right .bar {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.skills .content .col-right .bar .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skills .content .col-right .bar .info span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills .content .col-right .bar .line {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 2px;
+}
+
+.project .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project .content .card {
+    width: 340px;
+    margin: 15px;
+}
+
+.project .content .card .card-img {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project .content .card .card-img img {
     position: absolute;
-    left: -0.50rem;
     top: 0;
-    font-size: 1.5rem;
-    background-color: white;
-    color: rgba(77, 77, 201, 0.829);
-}
-/* =====================  Skills ========================== */
-
-.progress {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
+    transition: 0.5s ease;
 }
 
-.progress .progress-bar {
-    border-radius: 10px;
+.project .content .card .card-img img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1040px) {
+    header{
+        padding: 12px 20px;
+    }
+
+    header.sticky {
+        padding: 10px 20px;
+    }
+
+    header .navigation {
+        position: relative;
+        display: none;
+    }
+
+    .menu-btn {
+        position: absolute;
+        background: url(https://icon-library.com/images/white-hamburger-menu-icon/white-hamburger-menu-icon-24.jpg)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main .content h2 {
+        font-size: 1em;
+    }
+
+    .animated-text h3 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 70px;
+        letter-spacing: 1px;
+    }
+
+    .about .content {
+        flex-direction: column;
+    }
+
+    .about .content .column {
+        position: relative;
+        width: 100%;
+    }
+
+    .about .content .col-right {
+        margin-top: 40px;
+    }
+
+    .skills .content {
+        flex-direction: column;
+    }
+
+    .skills .content .column {
+        position: relative;
+        width: 100%;
+    }
+
+    .skills .content .col-right {
+        margin-top: 40px;
+    }
 }

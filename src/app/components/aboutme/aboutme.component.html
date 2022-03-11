@@ -1,33 +1,16 @@
-<section class="about section mb-5" id="about">
-  <div class="container">
-    <h2 class="title mb-3">
-      Acerca de...
-      <!-- Icono para editar -->
-    </h2>
-    <div class="row">
-      <div class="about-img padd-15">
-        <!-- Img -->
-        <img class="about-img" src="http://c.files.bbci.co.uk/48DD/production/_107435681_perro1.jpg" alt="">
+<section class="about" id="about">
+  <div class="title">
+    <h2 class="section-title">Acerca de...</h2>
+  </div>
+  <div class="content">
+    <div class="column col-left">
+      <div class="img-card">
+        <img src="https://scontent.frgl4-1.fna.fbcdn.net/v/t1.6435-9/78532755_2549687198597559_3558387332518248448_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGx1QHiuGzrpXtgRwxj3HmCRe-4YI1UKWxF77hgjVQpbH4W-K6WH-JaMxRiiDWlQzZvX0c2eC3WeJSWkzIjEMwN&_nc_ohc=ds8bCThVFwgAX929iZr&_nc_ht=scontent.frgl4-1.fna&oh=00_AT_voslNzYzQGER27vsZA54_HYfXqC3KL27ik1F5x9Gwdg&oe=62506684" alt="">
       </div>
-      <div class="about-content padd-15">
-        <div class="rounded">
-          <div class="row">
-            <div class="about-text">
-              <h4 class="title mb-3">Introducción</h4>
-              {{myPortfolio.about}}
-            </div>
-            <div class="other-information">
-              <h4 class="title mb-3">Otra información</h4>
-              <ul>
-                <li class="mb-2"><strong>Lugar de nacimiento:</strong> Córdoba Capital</li>
-                <li class="mb-2"><strong>Lugar de nacimiento:</strong> Córdoba Capital</li>
-                <li class="mb-2"><strong>Lugar de nacimiento:</strong> Córdoba Capital</li>
-                <li class="mb-2"><strong>Lugar de nacimiento:</strong> Córdoba Capital</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
+    <div class="column col-right">
+      <h2 class="content-title">Introducción</h2>
+      <p class="paragraph-text">{{myPortfolio.about}}</p>
     </div>
   </div>
 </section>

@@ -16,5 +16,4 @@ export class ProfileComponent implements OnInit {
       this.myPortfolio = data;
     });
   }
-
 }
