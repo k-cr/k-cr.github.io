@@ -1,18 +1,27 @@
 <!-- Home section -->
-<section class="main">
-  <div class="content">
-    <h2>¡Hola! Soy<br><span>{{myPortfolio.name}}</span></h2>
-    <div class="animated-text mb-3">
-      <h3>Web Developer</h3>
-      <h3>Un re capo el pibe</h3>
-      <h3>Web Designer</h3>
+<section class="profile">
+    <img src="https://www.fg-a.com/facebook-images/mountain-lake.jpg" alt="" class="profile-cover mb-3">
+    <div class="profile-details">
+      <div class="pd-left">
+        <div class="pd-row">
+          <img
+          src="https://scontent.frgl4-1.fna.fbcdn.net/v/t1.6435-9/78532755_2549687198597559_3558387332518248448_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGx1QHiuGzrpXtgRwxj3HmCRe-4YI1UKWxF77hgjVQpbH4W-K6WH-JaMxRiiDWlQzZvX0c2eC3WeJSWkzIjEMwN&_nc_ohc=ds8bCThVFwgAX929iZr&_nc_ht=scontent.frgl4-1.fna&oh=00_AT_voslNzYzQGER27vsZA54_HYfXqC3KL27ik1F5x9Gwdg&oe=62506684"
+          class="img-fluid border rounded-6 shadow-lg mb-4" loading="lazy" id="profile-pfp">
+          <div>
+            <h3 class="content-title">{{myPortfolio.name}}</h3>
+            <p>{{myPortfolio.ocupation}}</p>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=""></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="pd-right">
+        <button type="button" class="mb-2">Descargar CV</button>
+        <button type="button" class="mb-2">Compartir perfil</button>
+        <br>
+        <button type="button" class="mb-2">Editar perfil</button>        
+      </div>
     </div>
-    <a href="#" class="btn mb-3">¡Mira mis proyectos!</a>
-    <div class="media-icons">
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-  </div>
 </section>
 <!-- END Section -->
 

@@ -2,6 +2,7 @@
     --color-primary: #3a6cf4;
     --color-secondary: #4e9eff;
     --color-lightblue: #235bf6;
+    --color-alternative: #060624;
 /* =============== Basic =========== */
 }
 
@@ -16,143 +17,18 @@ section {
     padding: 100px 200px;
 }
 
+li {
+    list-style: none;
+}
+
 body {
+    background-color: #f8f8f8;
     min-height: 110vh;
 }
 
-
-header {
-    z-index: 999;
-    position: fixed;
-    background: rgba(255,255,255,0.1);
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s ease;
-}
-
-header .brand {
-    color: #fff;
-    font-size: 1.5em;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-header .navigation {
-    position: relative;
-}
-
-header .navigation a {
-    color: #fff;
-    font-size: 1em;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 30px;
-}
-
-header .navigation a:hover {
-    color: var(--color-primary);
-}
-
-header.sticky {
-    background: var(--color-primary);
-    padding: 15px 150px;
-}
-
-.main {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    align-items: center;
-    background: url(https://wallpaperaccess.com/full/569754.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.main .content {
-    max-width: 800px;
-}
-
-.main .content h2 {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.main .content h2 span {
-    font-size: 2.8rem;
-    font-weight: 600;
-}
-
-.animated-text {
-    position: relative;
-    height: 70px;
-    overflow: hidden;
-}
-
-.animated-text h3 {
-    color: var(--color-primary);
-    font-size: 3em;
-    font-weight: 700;
-    line-height: 70px;
-    letter-spacing: 1px;
-}
-
-.animated-text h3:nth-child(1) {
-    animation: text-move 5s infinite;
-}
-
-@keyframes text-move {
-    0% {
-        margin-top: 0;
-    }
-    25% {
-        margin-top: -70px;
-    }
-    50% {
-        margin-top: -140px;
-    }
-    75%{
-        margin-top: -70px;
-    }
-    100% {
-        margin-top: 0;
-    }
-}
-
-.btn {
-    color: #fff;
-    background: var(--color-secondary);
-    font-size: 1em;
-    font-weight: 600;
-    display: inline-block;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1px;
-    border-radius: 2px;
-    transition: 0.5s ease;
-}
-
-.btn:hover {
-    background: var(--color-lightblue);
-    color: #fff;
-}
-
-.media-icons {
-    margin-top: -10px;
-}
-
-.media-icons a {
-    color: #fff;
-    font-size: 25px;
-    margin-right: 20px;
+.content-title {
+    font-size: 1.7em;
+    font-weight: 800;
 }
 
 .title {
@@ -194,28 +70,106 @@ header.sticky {
     transform: translateX(-50%);
 }
 
+/* =============== NavBar =========== */
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+#navbar {
+    padding: 10px;
+}
+
+/* =============== Main =========== */
+
+.profile {
+    padding: 20px 15%;
+    height:  90vh;
+}
+
+.profile-cover {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+
+.profile-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.pd-row {
+    display: flex;
+    align-items: flex-start;
+}
+
+#profile-pfp {
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+
+.pd-row div p {
+    font-size: 13px;
+}
+
+.pd-row div img {
+    width: 22px;
+    border-radius: 2px;
+    margin-right: 12px;
+}
+
+.pd-right button {
+    background: #3a6cf4;
+    border: 0;
+    outline: 0;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.pd-right button:first-child {
+    background: #e4e6eb;
+    color: #000;
+}
+
+/* =============== About =========== */
+
+.about {
+    background: var(--color-alternative);
+    color: #fff;
+}
+
 .about .content {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .about .content .col-left {
     position: relative;
-    width: 45%;
+    width: 30%;
 }
 
 .about .content .col-right {
     position: relative;
-    width: 50%;
+    width: 65%;
 }
 
 .about .content .col-left .img-card {
     position: relative;
     width: 100%;
-    min-height: 450px;
+    min-height: 300px;
 }
 
 .about .content .col-left .img-card img {
@@ -238,8 +192,69 @@ header.sticky {
     font-size: 1em;
 }
 
+/* =============== Education / Experience =========== */
+
+.education {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.experience {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.timeline-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.timeline {
+    background-color: #fff;
+    padding: 1.9rem 0.95rem;
+    border-radius: 16px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline .timeline-item {
+    position: relative;
+    padding-left: 2.5rem;
+    padding-bottom: 1.9rem;
+}
+
+.timeline .timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline .timeline-item:before {
+    content: " ";
+    width: 2px;
+    position: absolute;
+    height: 100%;
+    left: 0.5rem;
+    background-color: var(--color-primary);
+    top: 0;
+}
+
+.timeline .timeline-icon {
+    position: absolute;
+    left: -0.25rem;
+    top: 0;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: var(--color-primary);
+}
+
+.timeline .timeline-date {
+    font-size: 12px;
+    color: gray;
+}
+
+/* =============== Skills =========== */
+
 .skills {
-    background: #000016;
+    background: var(--color-alternative);
 }
 
 .skills .content {
@@ -286,6 +301,8 @@ header.sticky {
     border-radius: 2px;
 }
 
+/* =============== Proyects =========== */
+
 .project .content {
     display: flex;
     justify-content: center;
@@ -322,46 +339,33 @@ header.sticky {
     transform: scale(1.2);
 }
 
-@media (max-width: 1040px) {
-    header{
-        padding: 12px 20px;
-    }
-
-    header.sticky {
-        padding: 10px 20px;
-    }
-
-    header .navigation {
-        position: relative;
+@media (max-width: 411px) {
+    .pd-right button:nth-child(1),
+    .pd-right button:nth-child(2) {
         display: none;
     }
+}
 
-    .menu-btn {
-        position: absolute;
-        background: url(https://icon-library.com/images/white-hamburger-menu-icon/white-hamburger-menu-icon-24.jpg)no-repeat;
-        background-size: 30px;
-        background-position: center;
-        width: 40px;
-        height: 40px;
-        right: 0;
-        margin: 0 20px;
-        cursor: pointer;
-        transition: 0.3s ease;
+@media (max-width: 412px) {
+    .profile {
+        padding: 20px 15%;
+        height:  50vh;
     }
+}
 
+@media (max-width: 768px) {
+    .profile-details {
+        flex-direction: column;
+    }
+    
+    .pd-row div img {
+        display: none;
+    }
+}
+
+@media (max-width: 1040px) {
     section {
         padding: 80px 20px;
-    }
-
-    .main .content h2 {
-        font-size: 1em;
-    }
-
-    .animated-text h3 {
-        font-size: 2.2rem;
-        font-weight: 700;
-        line-height: 70px;
-        letter-spacing: 1px;
     }
 
     .about .content {
@@ -375,6 +379,12 @@ header.sticky {
 
     .about .content .col-right {
         margin-top: 40px;
+    }
+
+    .education,
+    .experience {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     .skills .content {
