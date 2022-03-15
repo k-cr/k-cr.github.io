@@ -2,7 +2,7 @@
     --color-primary: #3a6cf4;
     --color-secondary: #4e9eff;
     --color-lightblue: #235bf6;
-    --color-alternative: #d3d3d3;
+    --color-alternative: #e6e6e6;
 /* =============== Basic =========== */
 }
 
@@ -145,7 +145,6 @@ body {
 
 .about {
     background: var(--color-alternative);
-    color: #fff;
 }
 
 .about .content {
@@ -262,7 +261,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    color: #fff;
     margin-top: 20px;
 }
 
