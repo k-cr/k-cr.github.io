@@ -3,25 +3,13 @@
     <h2 class="section-title">Proyectos</h2>
   </div>
   <div class="content">
-    <div class="card">
-      <div class="card-img">
-        <img src="https://wisdomit.pt/wp-content/uploads/2020/08/8-Misconceptions-About-Programmers-That-Will-Change-Your-Opinion-About-Them_4.jpg" alt="">
+    <li class="timeline-item" *ngFor="let projects of projectList">
+      <div class="card">
+        <h2>{{projects.name}}</h2>
+        <div class="card-img">
+          <img src="{{projects.projectImage}}" alt="">
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-img">
-        <img src="https://wisdomit.pt/wp-content/uploads/2020/08/8-Misconceptions-About-Programmers-That-Will-Change-Your-Opinion-About-Them_4.jpg" alt="">
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-img">
-        <img src="https://wisdomit.pt/wp-content/uploads/2020/08/8-Misconceptions-About-Programmers-That-Will-Change-Your-Opinion-About-Them_4.jpg" alt="">
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-img">
-        <img src="https://wisdomit.pt/wp-content/uploads/2020/08/8-Misconceptions-About-Programmers-That-Will-Change-Your-Opinion-About-Them_4.jpg" alt="">
-      </div>
-    </div>
+    </li>
   </div>
 </section>
