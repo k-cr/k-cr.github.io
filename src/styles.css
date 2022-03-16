@@ -316,8 +316,9 @@ body {
 }
 
 .project .content .card {
-    width: 340px;
+    width: 350px;
     margin: 15px;
+    border-radius: 6px;
 }
 
 .project .content .card .card-img {
