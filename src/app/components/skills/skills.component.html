@@ -10,9 +10,9 @@
         </div>
         <div class="column col-right">
             <li *ngFor="let hardskill of myHardskills">
-                <h4>{{hardskill.name}}</h4>
+                <h5>{{hardskill.name}}</h5>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="[hardskill.level]" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </li>
         </div>
