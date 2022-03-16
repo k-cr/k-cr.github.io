@@ -5,11 +5,17 @@
     </div>
     <div class="content">
         <div class="column col-left">
-            <h2 class="content-title">Pequeño resumen de habilidades</h2>
+            <div class="title-button">
+                <h3 class="content-title">Pequeño resumen de las habilidades</h3>
+                <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#editSkillsSummary"></i>
+            </div>
             <p>{{mySoftskills.description}}</p>
         </div>
         <div class="column col-right">
-            <h2 class="content-title">Hard Skills</h2>
+            <div class="title-button">
+                <h3 class="content-title">HardSkills</h3>
+                <i class="fa-solid fa-plus"  data-bs-toggle="modal" data-bs-target="#editHardSkills"></i>
+              </div>
             <li *ngFor="let hardskill of myHardskills">
                 <h5>{{hardskill.name}}</h5>
                 <div class="progress">

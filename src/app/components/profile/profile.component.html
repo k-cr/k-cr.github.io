@@ -16,11 +16,45 @@
         </div>
       </div>
       <div class="pd-right">
-        <button type="button" class="mb-2">Descargar CV</button>
-        <button type="button" class="mb-2">Compartir perfil</button>
-        <br>
-        <button type="button" class="mb-2">Editar perfil</button>        
+        <button type="button" class="mb-2" data-bs-toggle="modal" data-bs-target="#editProfile">Editar perfil</button>  
+        <button type="button" class="mb-2">Compartir perfil</button>      
       </div>
     </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar perfil</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="nameImput" class="form-label">Nombre y apellido</label>
+          <input class="form-control" type="text" placeholder="Escriba su nombre y apellido"
+            aria-label="Escriba su nombre y apellido">
+        </div>
+        <div class="mb-3">
+          <label for="nameImput" class="form-label">Ocupación</label>
+          <input class="form-control" type="text" placeholder="Ejemplo: Estudiante, Programador en Google."
+            aria-label="Ejemplo: Estudiante, Programador en Google.">
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Editar foto de portada</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Editar foto de perfil</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
 
