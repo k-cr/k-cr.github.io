@@ -28,18 +28,24 @@
     }
     ],
     "hardskills": [{
-
+        "name": "HTML",
+        "level": "75"
+    },
+    {
+        "name": "CSS",
+        "level": "65"
+    },
+    {
+        "name": "Java",
+        "level": "70"
+    },
+    {
+        "name": "MySQL",
+        "level": "60"
     }],
-    "softskills": [{
-            "name": "Trabajo en equipo"
-        },
-        {
-            "name": "Aprendizaje práctico"
-        },
-        {
-            "name": "Re piola el pibe"
-        }
-    ],
+    "softskills":{
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cum quasi, minus nemo vero eum aspernatur eos sapiente eius maxime dolores deleniti in, itaque quos velit corporis recusandae iusto expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, iure officiis? Nesciunt possimus earum eligendi laboriosam quos adipisci rem, assumenda fugit alias similique, excepturi aspernatur, vel praesentium? Voluptas, libero voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cum quasi, minus nemo vero eum aspernatur eos sapiente eius maxime dolores deleniti in, itaque quos velit corporis recusandae iusto expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, iure officiis? Nesciunt possimus earum eligendi laboriosam quos adipisci rem, assumenda fugit alias similique, excepturi aspernatur, vel praesentium? Voluptas, libero voluptatum."
+    },
     "projects": [{
         "name": "Proyecto Portfolio: Argentina Programa",
         "description": "Proyecto realizado como práctica para la segunda etapa de Argentina Programa, #YoProgramo",
