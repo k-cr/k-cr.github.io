@@ -7,7 +7,7 @@
         <div class="column col-left">
             <div class="title-button">
                 <h3 class="content-title">Pequeño resumen de las habilidades</h3>
-                <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#editSkillsSummary"></i>
+                <i class="fa-solid fa-edit" data-bs-toggle="modal" data-bs-target="#editSkillsSummary"></i>
             </div>
             <p>{{mySoftskills.description}}</p>
         </div>
@@ -17,7 +17,10 @@
                 <i class="fa-solid fa-plus"  data-bs-toggle="modal" data-bs-target="#editHardSkills"></i>
               </div>
             <li *ngFor="let hardskill of myHardskills">
-                <h5>{{hardskill.name}}</h5>
+                <div class="title-button">
+                    <h5>{{hardskill.name}}</h5>
+                    <i class="fa-solid fa-edit" data-bs-toggle="modal" data-bs-target="#editSkillsSummary"></i>
+                </div>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" [style]="style" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
