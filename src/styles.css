@@ -71,7 +71,7 @@ body {
 }
 
 .title-button {
-    justify-content: space-between;
+    justify-content: flex;
 }
 
 /* =============== NavBar =========== */
