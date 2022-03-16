@@ -11,9 +11,6 @@ export class SkillsComponent implements OnInit {
   mySoftskills: any;
   myHardskills: any;
   
-  get style(){
-    return 'width' + this.myHardskills.level + '%'
-  }
 
   constructor(private portfolioData:PortfolioService) { }
 
@@ -22,6 +19,10 @@ export class SkillsComponent implements OnInit {
       this.mySoftskills = data.softskills;
       this.myHardskills = data.hardskills;
     });
+  }
+  
+  get style(){
+    return 'width' + this.myHardskills.level + '%'
   }
 
 }
