@@ -29,19 +29,19 @@
     ],
     "hardskills": [{
         "name": "HTML",
-        "level": "75"
+        "level": 75
     },
     {
         "name": "CSS",
-        "level": "65"
+        "level": 65
     },
     {
         "name": "Java",
-        "level": "70"
+        "level": 70
     },
     {
         "name": "MySQL",
-        "level": "60"
+        "level": 60
     }],
     "softskills":{
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cum quasi, minus nemo vero eum aspernatur eos sapiente eius maxime dolores deleniti in, itaque quos velit corporis recusandae iusto expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, iure officiis? Nesciunt possimus earum eligendi laboriosam quos adipisci rem, assumenda fugit alias similique, excepturi aspernatur, vel praesentium? Voluptas, libero voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cum quasi, minus nemo vero eum aspernatur eos sapiente eius maxime dolores deleniti in, itaque quos velit corporis recusandae iusto expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, iure officiis? Nesciunt possimus earum eligendi laboriosam quos adipisci rem, assumenda fugit alias similique, excepturi aspernatur, vel praesentium? Voluptas, libero voluptatum."
