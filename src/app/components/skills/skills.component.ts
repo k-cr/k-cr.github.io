@@ -10,6 +10,11 @@ export class SkillsComponent implements OnInit {
   myPortfolio: any;
   mySoftskills: any;
   myHardskills: any;
+  
+  get style(){
+    return 'width' + this.myHardskills.level + '%'
+  }
+
   constructor(private portfolioData:PortfolioService) { }
 
   ngOnInit(): void {
