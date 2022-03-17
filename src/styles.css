@@ -150,7 +150,7 @@ body {
 /* =============== About =========== */
 
 .about {
-    background: var(--color-alternative);
+    background-color: #f8f8f8;
 }
 
 .about .content {
