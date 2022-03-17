@@ -20,7 +20,10 @@
                   <i class="fa-regular fa-calendar"></i>
                   {{education.period}}
                 </h5>
-                <h5 class="timeline-title">{{education.degree}}</h5>
+                <div class="title-button">
+                  <h5 class="timeline-title">{{education.degree}}</h5>
+                  <i class="fa-solid fa-edit"  data-bs-toggle="modal" data-bs-target="#editeducation"></i>
+                </div>
                 <p class="timeline-text">{{education.otherInformation}}</p>
               </li>
             </div>
@@ -44,7 +47,10 @@
                   <i class="fa-regular fa-calendar"></i>
                   {{experience.period}}
                 </h5>
-                <h5 class="timeline-title">{{experience.ocupation}}</h5>
+                <div class="title-button">
+                  <h5 class="timeline-title">{{experience.ocupation}}</h5>
+                  <i class="fa-solid fa-edit"  data-bs-toggle="modal" data-bs-target="#editeducation"></i>  
+                </div>
                 <p class="timeline-text">{{experience.description}}</p>
               </li>
             </div>
