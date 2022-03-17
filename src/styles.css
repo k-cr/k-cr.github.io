@@ -198,6 +198,10 @@ body {
 
 /* =============== Education / Experience =========== */
 
+#experience {
+    background: var(--color-alternative);
+}
+
 .education {
     flex: 0 0 50%;
     max-width: 50%;
