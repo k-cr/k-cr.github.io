@@ -4,7 +4,7 @@
   <img class="profile-cover" src="{{myPortfolio.bannerImage}}" alt="Card image cap">
   <div class="profile-details">
     <div class="info-about">
-      <div class="img-about mb-3">
+      <div class="img-about justify-content-between mb-3">
         <img src="{{myPortfolio.profilePicture}}" id="profile-pfp">
         <i class="fa-solid fa-pen-to-square"></i>
       </div>
@@ -45,35 +45,6 @@
     </div>
   </div>
 </div>
-
-
-
-<section class="profile mx-auto">
-  <img src="{{myPortfolio.bannerImage}}" alt="" class="profile-cover">
-    <div class="profile-details">
-      <div class="pd-left">
-        <img
-        src="{{myPortfolio.profilePicture}}"
-        class="img-fluid mb-2" loading="lazy" id="profile-pfp">
-        <div class="pd-row">
-          <div class="d-flex">
-            <div>
-                <h3 class="content-title">{{myPortfolio.name}}</h3>
-              <div class="profile-ocupation">
-                <p>{{myPortfolio.ocupation}}</p>
-              </div>
-              <div>
-                <span><p>Río Gallegos, Argentina</p></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pd-right">
-        <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#editProfile"></i>
-      </div>
-    </div>
-</section>
 
 <!-- Modal -->
 <div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
