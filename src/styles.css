@@ -18,6 +18,7 @@ section {
     border-color: #000;
     border-style: 2px solid;
     width: 85%;
+    padding: 20px;
 }
 
 li {
