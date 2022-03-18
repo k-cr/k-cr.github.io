@@ -15,6 +15,8 @@
 
 section {
     padding: 100px 200px;
+    border-radius: 2px;
+    border-color: #000;
 }
 
 li {
@@ -115,7 +117,8 @@ body {
 
 #profile-pfp {
     width: 100px;
-    margin-right: 20px;
+    right: 30px;
+    top: -30px;
     border-radius: 6px;
 }
 
