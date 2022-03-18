@@ -1,5 +1,5 @@
 <!-- Home section -->
-<section class="profile">
+<section class="profile mx-auto">
   <img src="{{myPortfolio.bannerImage}}" alt="" class="profile-cover">
     <div class="profile-details">
       <div class="pd-left">
@@ -9,10 +9,7 @@
         <div class="pd-row">
           <div class="d-flex">
             <div>
-              <div class="justify-content-between">
                 <h3 class="content-title">{{myPortfolio.name}}</h3>
-                <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#editProfile"></i>
-              </div>
               <div class="profile-ocupation">
                 <p>{{myPortfolio.ocupation}}</p>
               </div>
@@ -24,8 +21,7 @@
         </div>
       </div>
       <div class="pd-right">
-        <button type="button" class="mb-2" data-bs-toggle="modal" data-bs-target="#editProfile">Editar perfil</button>  
-        <button type="button" class="mb-2">Compartir perfil</button>      
+        <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#editProfile"></i>
       </div>
     </div>
 </section>
