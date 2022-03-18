@@ -17,6 +17,7 @@ section {
     padding: 100px 200px;
     border-radius: 2px;
     border-color: #000;
+    width: 85%;
 }
 
 li {
@@ -119,10 +120,6 @@ body {
     right: 30px;
     margin-top: -110px;
     border-radius: 50%;
-}
-
-.pd-row div p {
-    font-size: 13px;
 }
 
 .pd-row div img {
