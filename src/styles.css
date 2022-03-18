@@ -14,10 +14,10 @@
 }
 
 section {
-    padding: 100px 200px;
     border-radius: 2px;
     border-color: #000;
-    width: 90%;
+    border-style: 2px solid;
+    width: 85%;
 }
 
 li {
