@@ -145,6 +145,10 @@ body {
     align-self: center;
 }
 
+#profile-pfpEdit {
+    justify-content: space-between;
+}
+
 .profile-details {
     padding: 2rem;
 }
