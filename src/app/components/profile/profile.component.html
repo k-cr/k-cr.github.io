@@ -14,15 +14,15 @@
           <h2>{{myPortfolio.name}}</h2>
           <div id="info-company">{{myPortfolio.ocupation}}</div>
           <div id="info-contact">
-            <span>Río Gallegos, Argentina</span>
+            <span>{{myPortfolio.ubication}}</span>
           </div>
         </div>
         <ul id="info-details">
           <li>
             <a href="#" style="text-decoration: none;">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Logo_oficial_UNPA.jpg" alt=""
+              <img src="{{myPortfolio.institutionImage}}" alt=""
                 class="logo-unpa">
-              <h5>Universidad Nacional de la Patagonia Austral</h5>
+              <h5>{{myPortfolio.institution}}</h5>
             </a>
           </li>
         </ul>
@@ -64,6 +64,20 @@
           <label for="nameImput" class="form-label">Ocupación</label>
           <input class="form-control" type="text" placeholder="Ejemplo: Estudiante, Programador en Google."
             aria-label="Ejemplo: Estudiante, Programador en Google.">
+        </div>
+        <div class="mb-3">
+          <label for="nameImput" class="form-label">Ubicación</label>
+          <input class="form-control" type="text" placeholder="Ejemplo: Buenos Aires, Argentina"
+            aria-label="Ejemplo: Buenos Aires, Argentina">
+        </div>
+        <div class="mb-3">
+          <label for="nameImput" class="form-label">Institución relacionada</label>
+          <input class="form-control" type="text" placeholder="Ejemplo: Universidad Nacional de Buenos Aires"
+            aria-label="Ejemplo: Universidad Nacional de Buenos Aires">
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Editar logo de la institución</label>
+          <input class="form-control" type="file" id="formFile">
         </div>
         <div class="mb-3">
           <label for="formFile" class="form-label">Editar foto de portada</label>
