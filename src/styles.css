@@ -155,11 +155,15 @@ body {
 
 /* =============== About =========== */
 
+#about {
+    padding: 2rem;
+}
 
 /* =============== Education / Experience =========== */
 
 #experience {
     background: var(--color-alternative);
+    padding: 2rem;
 }
 
 .education {
