@@ -150,19 +150,19 @@ body {
 }
 
 .profile-details {
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 /* =============== About =========== */
 
 #about {
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 /* =============== Education / Experience =========== */
 
 #experience {
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 .education {
@@ -224,7 +224,7 @@ body {
 /* =============== Skills =========== */
 
 .skills {
-    background: var(--color-alternative);
+    padding: 2.5rem;
 }
 
 .skills .content {
@@ -272,6 +272,9 @@ body {
 }
 */
 /* =============== Proyects =========== */
+.project {
+    padding: 2.5rem;
+}
 
 .project .content {
     display: flex;
