@@ -4,7 +4,7 @@
     <i class="fa-solid fa-plus"  data-bs-toggle="modal" data-bs-target="#addproject"></i>
   </div>
   <div class="content">
-    <li class="timeline-item" *ngFor="let projects of projectList">
+    <li *ngFor="let projects of projectList">
       <div class="card">
         <img src="{{projects.projectImage}}" class="card-img-top" alt="...">
         <div class="card-body">
