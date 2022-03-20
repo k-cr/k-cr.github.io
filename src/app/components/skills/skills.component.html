@@ -7,20 +7,20 @@
     <div class="content">
         <div class="column col-left">
             <div class="title-button">
-                <h3 class="content-title">Pequeño resumen de las habilidades</h3>
+                <h4>Pequeño resumen de las habilidades</h4>
                 <i class="fa-solid fa-edit" data-bs-toggle="modal" data-bs-target="#editSkillsSummary"></i>
             </div>
             <p>{{mySoftskills.description}}</p>
         </div>
         <div class="column col-right">
             <div class="title-button">
-                <h3 class="content-title">HardSkills</h3>
-                <i class="fa-solid fa-plus"  data-bs-toggle="modal" data-bs-target="#editHardSkills"></i>
+                <h4>HardSkills</h4>
+                <i class="fa-solid fa-plus"  data-bs-toggle="modal" data-bs-target="#addHardSkill"></i>
               </div>
             <li *ngFor="let hardskill of myHardskills">
                 <div class="title-button">
                     <h5>{{hardskill.name}}</h5>
-                    <i class="fa-solid fa-edit" data-bs-toggle="modal" data-bs-target="#editSkillsSummary"></i>
+                    <i class="fa-solid fa-edit" data-bs-toggle="modal" data-bs-target="#editHardSkill"></i>
                 </div>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" [style]="style" aria-valuemin="0" aria-valuemax="100"></div>
@@ -30,12 +30,63 @@
     </div>
 </section>
 
-<div class="modal fade" id="editSkillsSummary" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+<!-- Modal -->
+<div class="modal fade" id="editSkillsSummary" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar resumen de las habilidades</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Pon una descripción de tus habilidades</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="editHardSkill" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
   aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel">Modificar hardskill</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nameImput" class="form-label">Nombre</label>
+            <input class="form-control" type="text" placeholder="Ejemplo: HTML, CSS"
+              aria-label="Ejemplo: HTML, CSS">
+          </div>
+          <div class="mb-3">
+            <label for="nameImput" class="form-label">Nivel que piensa que tiene</label>
+            <input class="form-control" type="text" placeholder="Ejemplo: 50, 90..."
+              aria-label="Ejemplo: 50, 90...">
+          </div>
+          <br>
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addHardSkill" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Añadir hardskill</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">

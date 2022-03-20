@@ -1,7 +1,7 @@
 <section class="mat-card card project mx-auto" id="projects">
   <div class="title-button">
     <h3 class="content-title">Proyectos</h3>
-    <i class="fa-solid fa-plus"  data-bs-toggle="modal" data-bs-target="#editeducation"></i>
+    <i class="fa-solid fa-plus"  data-bs-toggle="modal" data-bs-target="#addproject"></i>
   </div>
   <div class="content">
     <li class="timeline-item" *ngFor="let projects of projectList">
@@ -10,7 +10,7 @@
         <div class="card-body">
           <div class="title-button">
             <h5 class="card-title">{{projects.name}}</h5>
-            <i class="fa-solid fa-plus"  data-bs-toggle="modal" data-bs-target="#editproject"></i>
+            <i class="fa-solid fa-edit"  data-bs-toggle="modal" data-bs-target="#editproject"></i>
           </div>
           <p class="card-text">{{projects.description}}</p>
           <a href="{{projects.linkLiveDemo}}" class="card-link">Live Demo</a>
@@ -27,6 +27,44 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel">Modificar proyecto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nameImput" class="form-label">Nombre</label>
+            <input class="form-control" type="text" placeholder="Escriba el nombre del proyecto"
+              aria-label="Escriba el nombre del proyecto">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Describa brevemente su proyecto</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="nameImput" class="form-label">Vista previa</label>
+            <input class="form-control" type="text" placeholder="Escriba el enlace a la vista previa"
+              aria-label="Escriba el enlace a la vista previa">
+          </div>
+          <div class="mb-3">
+            <label for="nameImput" class="form-label">Enlace al código fuente</label>
+            <input class="form-control" type="text" placeholder="Escriba el enlace al código fuente"
+              aria-label="Escriba el enlace al código fuente">
+          </div>
+          <br>
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addproject" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Añadir proyecto</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
