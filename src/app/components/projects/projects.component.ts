@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/services/portfolio.service';
+import {MatCardModule} from '@angular/material/card';
+
 
 @Component({
   selector: 'app-projects',

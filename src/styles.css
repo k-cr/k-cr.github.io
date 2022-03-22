@@ -223,7 +223,7 @@ body {
 
 /* =============== Skills =========== */
 
-.skills {
+#skills {
     padding: 2.5rem;
 }
 
@@ -272,7 +272,11 @@ body {
 }
 */
 /* =============== Proyects =========== */
-.project {
+.example-card {
+    max-width: 400px;
+  }
+  
+#projects {
     padding: 2.5rem;
 }
 
@@ -321,6 +325,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    #info-details {
+        display: none;
+    }
+
     .profile-details {
         flex-direction: column;
     }
@@ -367,3 +375,5 @@ body {
         margin-top: 40px;
     }
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -21,9 +21,7 @@
                     <h5>{{hardskill.name}}</h5>
                     <i class="fa-solid fa-edit" data-bs-toggle="modal" data-bs-target="#editHardSkill"></i>
                 </div>
-                <div class="progress mb-2">
-                    <div class="progress-bar" role="progressbar" [style]="style" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+                <mat-progress-bar class="mb-2" [color]="color" [mode]="mode" [value]="hardskill.level" [bufferValue]="bufferValue" style="height:12px; border-radius: 4px;"></mat-progress-bar>
             </li>
         </div>
     </div>

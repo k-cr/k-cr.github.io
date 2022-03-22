@@ -5,7 +5,25 @@
   </div>
   <div class="content">
     <li *ngFor="let projects of projectList">
-      <div class="card">
+      <mat-card class="example-card">
+        <div style="padding: 5px;" class="title-button">
+          <h5 class="card-title">{{projects.name}}</h5>
+          <i class="fa-solid fa-edit"  data-bs-toggle="modal" data-bs-target="#editproject"></i>
+        </div>
+        <img mat-card-image src="{{projects.projectImage}}" alt="Project Image">
+          <p>
+            {{projects.description}}
+          </p>
+        <mat-card-actions>
+          <a href="{{projects.linkLiveDemo}}"><button mat-button>Live Demo</button></a>
+          <a href="{{projects.linkSourceCode}}"><button mat-button>Source Code</button></a>
+        </mat-card-actions>
+      </mat-card>
+    </li>
+
+    <!-- 
+    <li *ngFor="let projects of projectList">
+      <div class="mat-card">
         <img src="{{projects.projectImage}}" class="card-img-top" alt="...">
         <div class="card-body">
           <div class="title-button">
@@ -18,6 +36,7 @@
         </div>
       </div>
     </li>
+    -->
   </div>
 </section>
 
