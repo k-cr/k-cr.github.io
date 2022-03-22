@@ -33,8 +33,8 @@ body {
 .mat-card {
     border-radius: 10px 10px 10px 10px;
     margin: 10px 10px;
-    padding: 0px;
-    width: 85%;
+    padding: 3px;
+    width: 90%;
 }
 
 .content-title {
@@ -100,6 +100,7 @@ body {
 /* =============== Main =========== */
 
 .profile-cover {
+    border-radius: 10px;
     width: 100%;
     display: flex;
 }
@@ -375,5 +376,6 @@ body {
         margin-top: 40px;
     }
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/*html, body { height: 100%; }*/
+
+/*body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }*/
