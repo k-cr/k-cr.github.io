@@ -19,7 +19,10 @@
             <li *ngFor="let hardskill of myHardskills">
                 <div class="title-button">
                     <h5>{{hardskill.name}}</h5>
-                    <i class="fa-solid fa-edit" data-bs-toggle="modal" data-bs-target="#editHardSkill"></i>
+                    <div class="d-block">
+                      <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal" data-bs-target="#editHardSkill"></i></span>
+                      <span style="padding-right: 5px;"><i class="fa-solid fa-trash"></i></span>
+                    </div>
                 </div>
                 <mat-progress-bar class="mb-2" [color]="color" [mode]="mode" [value]="hardskill.level" [bufferValue]="bufferValue" style="height:12px; border-radius: 4px;"></mat-progress-bar>
             </li>
