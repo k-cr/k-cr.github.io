@@ -20,7 +20,7 @@
                   <h5 class="timeline-title">{{education.degree}}</h5>
                   <div class="d-block">
                     <span style="padding-right: 5px;"><i class="fa-solid fa-edit" data-bs-toggle="modal" data-bs-target="#editeducation"></i></span>
-                    <span style="padding-right: 5px;"><i class="fa-solid fa-trash"></i></span>
+                    <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal" data-bs-target="#eliminar"></i></span>
                   </div>
                 </div>
                 <p class="timeline-text">{{education.otherInformation}}</p>
@@ -50,7 +50,7 @@
                   <h5 class="timeline-title">{{experience.ocupation}}</h5>
                   <div class="d-block">
                     <span style="padding-right: 5px;"><i class="fa-solid fa-edit"  data-bs-toggle="modal" data-bs-target="#editeducation"></i></span>
-                    <span style="padding-right: 5px;"><i class="fa-solid fa-trash"></i></span>
+                    <span style="padding-right: 5px;"><i class="fa-solid fa-trash" data-bs-toggle="modal" data-bs-target="#eliminar"></i></span>
                   </div>
                 </div>
                 <p class="timeline-text">{{experience.description}}</p>
@@ -191,6 +191,25 @@
           <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
           <button type="submit" class="btn btn-primary ms-2">Guardar cambios</button>
         </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="eliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar elemento</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Seguro que querés eliminar este elemento?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Eliminar</button>
       </div>
     </div>
   </div>
